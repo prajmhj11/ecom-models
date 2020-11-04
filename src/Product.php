@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\SharedModels;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -11,7 +11,7 @@ class Product extends Model
 
     public function categories()
     {
-        return $this->belongsToMany('Category');
+        return $this->belongsToMany('App\Models\Category');
     }
 
     public function presentPrice()
